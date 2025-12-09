@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    .container{
+      display: grid;
+      grid-template-columns: 200px 75px;
+    }
+     .container2{
+      display: grid;
+ grid-template-columns: 50px 1fr 75px;
+     }
+     .container3{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       column-gap: 20px;
+       row-gap: 10px;
+     }
+     
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+      <div style="background-color: lightpink;, height: 40px;">200px</div>
+  <div style="background-color:lightblue; , height: 40px;">75px</div>
+  </div>
+
+<br>
+  <div class="container2">
+      <div style="background-color: lightpink;, height: 40px;">col1</div>
+  <div style="background-color:lightblue; , height: 40px;">col2</div>
+        <div style="background-color: lightpink;, height: 40px;">col3</div>
+  </div>
+  
+  
+  <br>
+  <br>
+  
+    <div class="container3">
+      <div style="background-color: lightpink;, height: 40px;">col1</div>
+  <div style="background-color:lightblue; , height: 40px;">col2</div>
+        <div style="background-color: lightpink;, height: 40px;">col3</div>
+        
+  <div style="background-color:lightblue; , height: 40px;">col4</div>
+        <div style="background-color: lightpink;, height: 40px;">col1</div>
+  <div style="background-color:lightblue; , height: 40px;">col2</div>
+        <div style="background-color: lightpink;, height: 40px;">col3</div>
+        
+  <div style="background-color:lightblue; , height: 40px;">col4</div>
+  </div>
+  
+  <br>
+  <br>
+  
+
+</body>
+
+</html>
