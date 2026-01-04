@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Functions</title>
+</head>
+
+<body>
+  
+  
+  <script>
+    function greet(name='Ashwak'){
+      if(!name){
+  console.log('hi there')
+      }else{
+        console.log(`Hello ${name}`);
+      }
+    }
+    greet();
+    
+    
+function convertToFarenhiet(degree){
+  return farenhiet = (degree*9/5)+32;
+    }
+    
+function convertToCelsius(farenhiet){
+return  celsius = (farenhiet-32)*5/9;
+    }
+function convertToTemperature(degree,unit){
+  if (unit==='C'){
+    console.log(`Temperature in Farenhiet is ${convertToFarenhiet(degree)}°F`);
+  } else if (unit==='F'){
+    console.log(`Temperature in celsius is ${convertToCelsius(degree)}°C`);
+  }else{
+    return 'invalid input use C or F';
+  }
+}
+convertToTemperature(30,'C');
+convertToTemperature(86,'F');
+
+
+function convertToKm(length) {
+  return length * 1.60934;
+}
+
+function convertToMiles(length) {
+  return length * 0.621371;
+}
+
+function convertMileToFeet(length) {
+  return length * 5280;
+}
+
+function convertKmToFeet(length) {
+  return length * 3280.84;
+}
+
+function convertToLength(length, from, to) {
+  
+  if (from === 'km' && to === 'miles') {
+    console.log(convertToMiles(length) + ' miles');
+    
+  } else if (from === 'miles' && to === 'km') {
+    console.log(convertToKm(length) + ' km');
+    
+  } else if (from === 'km' && to === 'ft') {
+    console.log(convertKmToFeet(length) + ' feet');
+    
+  } else if (from === 'miles' && to === 'ft') {
+    console.log(convertMileToFeet(length) + ' feet');
+    
+  } else if (from === to) {
+    console.log(length + ' ' + to);
+    
+  } else {
+    console.log('Invalid input');
+  }
+}
+
+convertToLength(32, 'km', 'miles');
+
+
+function convertToLenght(lenght,from,to){
+  let mile=lenght*0.621371;
+  let km=lenght*1.6;
+  let miletoft=lenght*5280;
+  let kmtoft=lenght*3280.84;
+  if(from==='km'&& to==='miles'){
+    console.log(`${mile} miles`)
+  }else if(from==='miles'&&to==='km'){
+    console.log(`${km} km`)
+  }else if(from==='km'&& to==='km'){
+    console.log(`${lenght} km`);
+  } else if (from === 'miles' && to === 'miles') {
+  console.log(`${lenght} miles`);
+}else if(from==='km'&&to==='ft'){
+  console.log(`${kmtoft} feets`);
+  
+}else if(from==='miles'&& to==='ft'){
+  console.log(`${miletoft} feets`);
+}
+else {
+  return 'please input valid fields';
+}
+}
+convertToLenght(32,'km','miles');
+convertToLenght(50,'miles','km');
+convertToLenght(32,'km','km');
+convertToLenght(50,'miles','miles');
+convertToLenght(5,'miles','ft');
+convertToLenght(5,'km','ft');
+  </script>
+</body>
+
+</html>
